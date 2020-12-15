@@ -1,0 +1,57 @@
+body{
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+    background-color: #EFEA5A;
+}
+.titulo{
+    text-shadow:5px 1px 2px grey;
+}
+#btn{
+    background-color: transparent;
+    border: none;
+    text-shadow:5px 1px 2px grey ;
+    font-size: 15px;
+    font-weight: bold;
+}
+#niveles{
+    font-size: 50px;
+}
+#tablero{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.vueltaFicha{
+    background-color: #f29e4c;
+    border: solid black 3px;
+    width: 20%;
+    height: 80px;
+    color: transparent;
+}
+.fichas{
+    background-color: #f29e4c;
+    border: solid black 3px;
+    width: 20%;
+    height: 80px;
+    text-align: center;
+    font-size: 50px;
+}
+.correcta{
+    background-color: #5FAD56;
+    border: solid black 3px;
+    width: 20%;
+    height: 80px;
+    text-align: center;
+    font-size: 50px;
+}
+@media only screen and (min-width: 800px){
+    #tablero{
+        width: 50%;
+    }
+}
