@@ -114,6 +114,7 @@ function iniciarPagina(){
                 arr.forEach(element => {
                     element.classList.remove('fichas');
                     element.classList.add('correcta');
+                    element.removeEventListener("click", jugar, false); 
                 });
         }else{
             arr.forEach(element => {
@@ -145,7 +146,7 @@ function iniciarPagina(){
         let niveles = document.getElementById("niveles");
         niveles.innerHTML = "";
         tablero.innerHTML = "";
-        if (casilleros == 8){
+        if (casilleros == 20){
             let nombre = document.getElementById("input_name").value;
             setTimeout(function(){
                 document.querySelector('#game').pause();
